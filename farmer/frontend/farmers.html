@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Farmers - KrishiConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar scrolled"> <div class="container">
+            <a href="index.html" class="nav-logo">KrishiConnect 🌱</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="farmers.html" class="nav-link">Farmers</a></li>
+                <li><a href="buyers.html" class="nav-link">Buyers</a></li>
+                <li><a href="contact.html" class="nav-link">Advisory</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-secondary" id="login-btn">Login</a>
+                <a href="#" class="btn btn-primary" id="signup-btn">Sign Up</a>
+                <a href="#" class="cart-icon" id="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header hero hero-farmers container">
+            <h1 data-aos="fade-up">Get the Price Your Hard Work Deserves.</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Sell your produce directly to a network of reliable buyers and increase your profitability. Join our community of smart farmers today.</p>
+        </section>
+
+        <section class="benefits-detailed container">
+            <h2 data-aos="fade-up">Why Join KrishiConnect?</h2>
+            <div class="benefit-grid">
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Higher Profits</h3>
+                    <p>By eliminating middlemen, you take home a larger share of the profit. We provide transparent pricing tools to help you set the best rates.</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="150">
+                    <h3>Wider Market Reach</h3>
+                    <p>Connect with hundreds of buyers in your region, from local restaurants to large retailers, all through your smartphone.</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Guaranteed Payments</h3>
+                    <p>Our secure digital payment system ensures you receive your payments on time, every time. No more chasing payments.</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="250">
+                    <h3>Logistics Support</h3>
+                    <p>We provide assistance with packaging and coordinate with logistics partners for efficient farm-to-buyer delivery.</p>
+                </div>
+                 <div class="benefit-item" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Crop Advisory</h3>
+                    <p>Get access to demand data and advisory services to help you plan your crops for the next season based on market needs.</p>
+                </div>
+                 <div class="benefit-item" data-aos="fade-up" data-aos-delay="350">
+                    <h3>Easy-to-Use App</h3>
+                    <p>Our simple mobile app (available in Hindi and English) makes it easy to list produce, manage orders, and track payments.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container" data-aos="fade-up">
+                <h2>Ready to Transform Your Farming Business?</h2>
+                <p>Registration is free and takes less than 5 minutes.</p>
+                <a href="#" class="btn btn-primary btn-large" id="farmer-signup-btn">Register as a Farmer Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 KrishiConnect. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <div id="cart-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Shopping Cart</h2>
+                <span class="close-button" id="close-cart-btn">&times;</span>
+            </div>
+            <div id="cart-items-container">
+                <p>Your cart is currently empty.</p>
+            </div>
+            <div class="modal-footer">
+                <h3>Total: ₹<span id="cart-total">0.00</span></h3>
+                <button id="checkout-btn" class="btn btn-primary">Proceed to Checkout</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="auth-modal-overlay"> ... </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

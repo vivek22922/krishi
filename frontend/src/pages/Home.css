@@ -1,0 +1,102 @@
+
+.home-page {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: #333; /* Default text color for sections other than hero */
+}
+
+/* --- Hero Section --- */
+.hero-section {
+  position: relative; /* Crucial for positioning the video and content */
+  height: 100vh; /* Make the hero section take the full height of the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff; /* White text for contrast against the video */
+  overflow: hidden; /* Hide anything that might spill out */
+}
+
+
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 0;
+}
+
+/* --- Background Video --- */
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Place it behind the overlay and content */
+  object-fit: cover; /* Cover the entire area without distortion */
+}
+
+/* --- Hero Content (Text and Button) --- */
+.hero-content {
+  position: relative; /* or z-index: 1 to ensure it's on top of the overlay */
+  z-index: 1;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem; /* Large, impactful heading */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
+}
+
+.hero-content p {
+  font-size: 1.25rem; /* Subtitle text */
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 300;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* --- Hero Button --- */
+.hero-button {
+  padding: 12px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #28a745; /* A vibrant green color */
+  border: none;
+  border-radius: 50px; /* Pill-shaped button */
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* While Framer Motion handles scale, CSS transitions are good for other properties */
+.hero-button:hover {
+  background-color: #218838; /* A darker green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+/* --- Styles for other sections (e.g., Features) --- */
+/* This ensures spacing and a clean look for content below the hero */
+.features-section {
+    padding: 80px 20px;
+    background-color: #f8f9fa; /* Light grey background to separate from hero */
+    text-align: center;
+}

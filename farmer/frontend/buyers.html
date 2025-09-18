@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Buyers - KrishiConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar scrolled"> <div class="container">
+            <a href="index.html" class="nav-logo">KrishiConnect 🌱</a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="farmers.html" class="nav-link">Farmers</a></li>
+                <li><a href="buyers.html" class="nav-link">Buyers</a></li>
+                <li><a href="contact.html" class="nav-link">Advisory</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#" class="btn btn-secondary" id="login-btn">Login</a>
+                <a href="#" class="btn btn-primary" id="signup-btn">Sign Up</a>
+                <a href="#" class="cart-icon" id="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header hero hero-buyers container">
+            <h1 data-aos="fade-up">Freshness You Can Trust. Prices You'll Love.</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Source the highest quality produce directly from local farms. Transparent, reliable, and delivered fresh.</p>
+        </section>
+
+        <section class="benefits-detailed container">
+            <h2 data-aos="fade-up">Why Source from KrishiConnect?</h2>
+            <div class="benefit-grid">
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Peak Freshness</h3>
+                    <p>Get produce delivered within hours of harvest, ensuring maximum flavor and nutritional value for your customers or family.</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="150">
+                    <h3>Full Traceability</h3>
+                    <p>Know exactly where your food comes from. Connect with the farmers, learn their story, and see their sustainable practices.</p>
+                </div>
+                <div class="benefit-item" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Competitive Prices</h3>
+                    <p>By removing unnecessary supply chain layers, we ensure you get the best prices for the freshest produce available.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="products" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Explore Available Produce</h2>
+                <div id="product-grid" class="product-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container" data-aos="fade-up">
+                <h2>Ready to Source the Best?</h2>
+                <p>Create a buyer account to start placing orders today.</p>
+                <a href="#" class="btn btn-primary btn-large" id="buyer-signup-btn">Sign Up as a Buyer</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 KrishiConnect. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <div id="cart-modal" class="modal-overlay"> ... </div>
+    <div class="modal-overlay" id="auth-modal-overlay"> ... </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
