@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const data = Object.fromEntries(formData.entries());
 
         try {
-            const response = await fetch(`${API_URL}/auth/register`, {
+            const response = await fetch(${API_URL}/auth/register, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data),
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Registration successful! Please log in.');
             document.getElementById('show-login').click(); // Switch to login modal
         } catch (error) {
-            alert(`Error: ${error.message}`);
+            alert(Error: ${error.message});
         }
     });
 
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const formData = new FormData(loginForm);
         const data = Object.fromEntries(formData.entries());
         try {
-            const response = await fetch(`${API_URL}/auth/login`, {
+            const response = await fetch(${API_URL}/auth/login, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(data),
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Login successful!');
             window.location.reload(); // Refresh page to update UI and fetch data
         } catch (error) {
-            alert(`Error: ${error.message}`);
+            alert(Error: ${error.message});
         }
     });
     
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function getProducts() {
         if (!productGrid) return;
         try {
-            const response = await fetch(`${API_URL}/products`);
+            const response = await fetch(${API_URL}/products);
             if (!response.ok) throw new Error('Network response was not ok');
             const products = await response.json();
             
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="product-content">
                         <span class="product-category">${product.category}</span>
                         <h3 class="product-name">${product.name}</h3>
-                        <p class="product-farmer"><i class="fas fa-user-check"></i> ${product.farmer?.name || 'KrishiConnect Farm'}</p>
+                        <p class="product-farmer"><i class="fas fa-user-check"></i> ${product.farmer?.name || 'KrishiMitra Farm'}</p>
                         <div class="product-footer">
                             <p class="product-price">₹${product.price} <span>/ ${product.unit}</span></p>
                             <button class="btn btn-primary add-to-cart-btn" data-product-id="${product._id}">Add to Cart</button>
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             const productId = e.target.dataset.productId;
             try {
-                const response = await fetch(`${API_URL}/cart`, {
+                const response = await fetch(${API_URL}/cart, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json', 'x-auth-token': token },
                     body: JSON.stringify({ productId: productId, quantity: 1 }),
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert('Item added to cart!');
                 fetchCart(); // Refresh cart data
             } catch (error) {
-                alert(`Error: ${error.message}`);
+                alert(Error: ${error.message});
             }
         }
     });
@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
     async function fetchCart() {
         if (!token) return;
         try {
-            const response = await fetch(`${API_URL}/cart`, { headers: { 'x-auth-token': token } });
+            const response = await fetch(${API_URL}/cart, { headers: { 'x-auth-token': token } });
             if (!response.ok) throw new Error('Could not fetch cart.');
             const cartItems = await response.json();
             renderCart(cartItems);
@@ -218,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target.classList.contains('remove-from-cart-btn')) {
             const productId = e.target.dataset.productId;
             try {
-                const response = await fetch(`${API_URL}/cart/${productId}`, {
+                const response = await fetch(${API_URL}/cart/${productId}, {
                     method: 'DELETE',
                     headers: { 'x-auth-token': token }
                 });
@@ -226,7 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const updatedCart = await response.json();
                 renderCart(updatedCart);
             } catch (error) {
-                alert(`Error: ${error.message}`);
+                alert(Error: ${error.message});
             }
         }
     });
@@ -244,7 +244,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 message: contactForm.querySelector('textarea').value
             };
             try {
-                const response = await fetch(`${API_URL}/contact`, {
+                const response = await fetch(${API_URL}/contact, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(data),
@@ -255,7 +255,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 alert(result.msg);
                 contactForm.reset();
             } catch(error) {
-                alert(`Error: ${error.message}`);
+                alert(Error: ${error.message});
             }
         });
     }
