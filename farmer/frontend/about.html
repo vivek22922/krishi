@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - KrishiConnect</title>
+    <title>About Us - KrishiMitra</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
@@ -11,8 +11,9 @@
 </head>
 <body>
 
-    <nav class="navbar scrolled"> <div class="container">
-            <a href="index.html" class="nav-logo">KrishiConnect 🌱</a>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo">KrishiMitra 🌱</a>
             <ul class="nav-menu">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
@@ -20,66 +21,125 @@
                 <li><a href="buyers.html" class="nav-link">Buyers</a></li>
                 <li><a href="contact.html" class="nav-link">Advisory</a></li>
             </ul>
-            <div class="nav-actions">
-                <a href="#" class="btn btn-secondary" id="login-btn">Login</a>
-                <a href="#" class="btn btn-primary" id="signup-btn">Sign Up</a>
+            <div class="nav-actions" id="nav-actions">
+                <a href="login.html" class="btn btn-secondary" id="login-btn">Login</a>
+                <a href="signup.html" class="btn btn-primary" id="signup-btn">Sign Up</a>
                 <a href="#" class="cart-icon" id="cart-icon"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </div>
     </nav>
 
-    <main>
-        <section class="page-header hero hero-about container">
-            <h1 data-aos="fade-up">Connecting Roots, Growing Futures.</h1>
-            <p data-aos="fade-up" data-aos-delay="100">We are a team passionate about empowering local farmers and building a more sustainable, transparent food ecosystem for everyone.</p>
-        </section>
+    <header id="hero" class="hero-about">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="char">C</span><span class="char">o</span><span class="char">n</span><span class="char">n</span><span class="char">e</span><span class="char">c</span><span class="char">t</span><span class="char">i</span><span class="char">n</span><span class="char">g</span>
+                <span class="char">R</span><span class="char">o</span><span class="char">o</span><span class="char">t</span><span class="char">s</span><span class="char">,</span>
+                <span class="char">G</span><span class="char">r</span><span class="char">o</span><span class="char">w</span><span class="char">i</span><span class="char">n</span><span class="char">g</span>
+                <span class="char">F</span><span class="char">u</span><span class="char">t</span><span class="char">u</span><span class="char">r</span><span class="char">e</span><span class="char">s</span><span class="char">.</span>
+            </h1>
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="500">We are a team passionate about empowering local farmers and building a more sustainable, transparent food ecosystem for everyone.</p>
+        </div>
+    </header>
 
-        <section class="about-story-section container">
-            <div class="story-grid">
-                <div class="story-image" data-aos="fade-right">
-                    
-                </div>
-                <div class="story-content" data-aos="fade-left" data-aos-delay="100">
-                    <h2>Our Mission</h2>
-                    <p>Our mission is to bridge the gap between the hardworking farmers of our community, like those right here in Bhind, and the consumers who seek fresh, high-quality produce. We believe in leveraging technology to create a fair marketplace that benefits both the producer and the buyer.</p>
-                    <p>KrishiConnect was born from a desire to see farmers get the true value for their labor while providing businesses and families with direct access to the freshest food imaginable.</p>
+    <main>
+        <section class="about-story-section section">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-image" data-aos="fade-right">
+                        <img src="images/generated-image.png" alt="1" class="story-image">
+                        
+                    </div>
+                    <div class="story-content" data-aos="fade-left" data-aos-delay="100">
+                        <h2>Our Mission</h2>
+                        <p>Our mission is to bridge the gap between the hardworking farmers of our community, like those right here in Bhind, and the consumers who seek fresh, high-quality produce. We believe in leveraging technology to create a fair marketplace that benefits both the producer and the buyer.</p>
+                        <p>KrishiMitra was born from a desire to see farmers get the true value for their labor while providing businesses and families with direct access to the freshest food imaginable.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="team-section bg-light">
-            <div class="container">
-                <h2 class="section-title" data-aos="fade-up">Meet the Team</h2>
-                <div class="team-grid">
-                    <div class="team-member" data-aos="zoom-in">
-                        <img src="images/farmer1.jpg" alt="Team Member 1">
-                        <h3>Priya Sharma</h3>
-                        <p>Co-Founder & CEO</p>
+      <section class="team-section section bg-light">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-up">Meet the Team</h2>
+        <div class="team-grid">
+            <div class="team-member" data-aos="zoom-in">
+                <img src="images/user.png" alt="Member 1">
+                <h3>Omendar Singh</h3>
+                <p>Team Lead</p>
+            </div>
+            <div class="team-member" data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/user.png" alt="Member 2">
+                <h3>Vivek Singh</h3>
+                <p>Technical Expert</p>
+            </div>
+            <div class="team-member" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/user.png" alt="Member 3">
+                <h3>Shivam Mishra</h3>
+                <p>Consultation Advisory</p>
+            </div>
+            <div class="team-member" data-aos="zoom-in" data-aos-delay="300">
+                <img src="images/user.png" alt="Member 4">
+                <h3>Rahul Sarathkar</h3>
+                <p>Product Expert</p>
+            </div>
+            <div class="team-member" data-aos="zoom-in" data-aos-delay="400">
+                <img src="images/user.png" alt="Member 5">
+                <h3>Vivek Dhakad</h3>
+                <p>Accessory Manager</p>
+            </div>
+            <div class="team-member" data-aos="zoom-in" data-aos-delay="500">
+                <img src="images/user.png" alt="Member 6">
+                <h3>Pratibha Shah</h3>
+                <p>Service Query</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
                     </div>
-                    <div class="team-member" data-aos="zoom-in" data-aos-delay="100">
-                        <img src="images/farmer2.jpg" alt="Team Member 2">
-                        <h3>Rohan Gupta</h3>
-                        <p>Head of Technology</p>
-                    </div>
-                    <div class="team-member" data-aos="zoom-in" data-aos-delay="200">
-                        <h3>Aarti Singh</h3>
-                        <p>Farmer Relations Lead</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 KrishiConnect. All Rights Reserved.</p>
+    <div class="modal-overlay" id="auth-modal-overlay">
+        <div class="modal-container" id="login-modal">
+            <button class="close-modal-btn" id="close-login-modal">&times;</button>
+            <h2>Welcome Back</h2>
+            <form id="login-form">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <p class="auth-switch">Don't have an account? <a href="#" id="show-signup">Sign Up</a></p>
+            </form>
         </div>
+
+        <div class="modal-container" id="signup-modal" style="display: none;">
+            <button class="close-modal-btn" id="close-signup-modal">&times;</button>
+            <h2>Join KrishiMitra</h2>
+            <form id="signup-form">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <select name="role" required>
+                    <option value="" disabled selected>I am a...</option>
+                    <option value="buyer">Buyer</option>
+                    <option value="farmer">Farmer</option>
+                </select>
+                <input type="text" name="location" placeholder="Your City (e.g., Bhopal, MP)" required>
+                <button type="submit" class="btn btn-primary">Create Account</button>
+                <p class="auth-switch">Already have an account? <a href="#" id="show-login">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Smart Farmer Marketplace. All Rights Reserved.</p>
     </footer>
-    
-    <div id="cart-modal" class="modal-overlay"> ... </div>
-    <div class="modal-overlay" id="auth-modal-overlay"> ... </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="main.js"></script>
 </body>
-</html>
+</html>        
